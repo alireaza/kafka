@@ -15,7 +15,7 @@ kafkacat \
 && rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
 RUN mkdir /kafka \
-&& wget -O - https://downloads.apache.org/kafka/3.3.1/kafka_2.13-3.3.1.tgz | tar xzf - -C "/kafka" --strip-components=1
+&& wget -O - https://downloads.apache.org/kafka/3.3.2/kafka_2.13-3.3.2.tgz | tar xzf - -C "/kafka" --strip-components=1
 
 ARG UNAME=udocker
 ARG UID=1000
